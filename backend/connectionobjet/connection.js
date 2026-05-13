@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
-const connection= async () => {
+
+const connection = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/concours", { useNewUrlParser: true,
-        useUnifiedTopology: true,   
-    });
-    console.log("Connected to MongoDB");
-    } catch (error) {   
-    console.error("Error connecting to MongoDB:", error);
-    }
-}           
-export default connection;    
+    await mongoose.connect("mongodb://127.0.0.1:27017/concours");
+    console.log("Connecté à MongoDB");
+  } catch (error) {
+    console.error("Erreur de connexion à MongoDB :", error);
+    throw error;
+  }
+};
+
+export default connection;
