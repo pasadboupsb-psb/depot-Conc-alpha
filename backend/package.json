@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "base de donnees concours armees SN",
+  "keywords": [
+    "bayo"
+  ],
+  "homepage": "https://github.com/bayo96/depot-Conc-alpha#readme",
+  "bugs": {
+    "url": "https://github.com/bayo96/depot-Conc-alpha/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayo96/depot-Conc-alpha.git"
+  },
+  "license": "ISC",
+  "author": "barobayo",
+  "type": "module",
+  "main": "index.js",
+
+  "scripts": {
+    "start": "node connectionobjet/connection.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.1",
+    "multer": "^2.1.1"
+  }
+}
