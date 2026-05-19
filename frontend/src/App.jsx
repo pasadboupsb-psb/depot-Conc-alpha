@@ -1,18 +1,13 @@
-import "./App.css";
+import Accueil from "./pages/accueil.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Au debut etait le mot et le logos</h1>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          cumque voluptate. Doloribus, quisquam. Voluptas, cumque voluptate.
-          Doloribus, quisquam. Voluptas, cumque voluptate. Doloribus, quisquam.
-          Voluptas, cumque voluptate. Doloribus, quisquam.
-        </p>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+         <Route path="/" element={<Accueil />} />
+      </Routes>
+    </Router>
   );
 }
 

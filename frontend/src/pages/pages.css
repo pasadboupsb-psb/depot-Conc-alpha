@@ -1,0 +1,7 @@
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
